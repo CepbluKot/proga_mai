@@ -22,8 +22,15 @@ int main() {
 	}
 	count_chars = 0;
 	while(count_chars != a.size()){
+		
 		if(isalpha(a[count_chars])){
+			if( isupper(a[count_chars])){
+				chars +=  tolower(a[count_chars]);
+			}
+			else{
+			
 			chars +=  a[count_chars];
+		}
 		}
 	count_chars++;
 	}
